@@ -1,0 +1,32 @@
+{
+  "name": "ethack",
+  "version": "1.0.0",
+  "description": "--------------",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "prelude-ls": "^1.1.2",
+    "require-ls": "^0.0.8",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askucher/ethack.git"
+  },
+  "keywords": [
+    "marketing"
+  ],
+  "author": "Ethack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/askucher/ethack/issues"
+  },
+  "homepage": "https://github.com/askucher/ethack#readme"
+}
