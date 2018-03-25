@@ -21,7 +21,7 @@ search = (term, cb)->
 
 scanerall = ([head, ...list], cb)->
     return cb null, {} if !head?
-    console.log list.length
+    #console.log list.length
     err, tokens <- search head.symbol
     return cb err if err?
     err, list <- scanerall list

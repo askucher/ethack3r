@@ -6,6 +6,9 @@
   "directories": {
     "test": "test"
   },
+  "bin": {
+    "ethack" : "./ethack.sh"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "prelude-ls": "^1.1.2",
@@ -14,7 +17,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "lsc -c scan.ls"
   },
   "repository": {
     "type": "git",

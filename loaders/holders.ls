@@ -5,13 +5,14 @@ require! {
 
 transform-cell = ($)-> (index, cell)->
     $(cell).text!
-    console.log $(cell).text!
+    #console.log $(cell).text!
     $(cell).text!
 transform-row = ($) -> (index, item)->
     return [$(item).find('td').map(transform-cell $).to-array!]
     
 download = (address, page, cb)->
     err, data <- get "https://etherscan.io/token/generic-tokenholders2?a=#{address}&s=1.25E%2b26&p=#{page}" .end
+    process.stdout.write \.
     return cb err if err?
     $ = load data.text
     return cb null, [] if data.text.index-of('There are no matching entries') > -1
