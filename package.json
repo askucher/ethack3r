@@ -1,5 +1,5 @@
 {
-  "name": "ethack",
+  "name": "ethack3r",
   "version": "1.0.0",
   "description": "--------------",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "test"
   },
   "bin": {
-    "ethack" : "./ethack.sh"
+    "ethack" : "./ethack3r.sh"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",

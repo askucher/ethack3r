@@ -1,12 +1,12 @@
-# ETHACK
+# ETHACK3R
 --------------
 
 How to use
 
 ```
-npm i ethack
+npm i ethack3r
 
-ethack scan 100
+ethack3r scan 100
 ```
 
 
