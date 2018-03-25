@@ -1,7 +1,7 @@
 require! {
     \require-ls
     \./load.ls
-    \prelude-ls : { map, concat, group-by, obj-to-pairs, map, sort-by, take }
+    \prelude-ls : { map, concat, group-by, obj-to-pairs, map, sort-by, take, reverse }
 }
 
 [_, _, command, length] = process.argv
@@ -20,5 +20,6 @@ rating =
           |> obj-to-pairs 
           |> map (-> [it.0, it.1.length])
           |> sort-by (.1)
+          |> reverse
           |> take length
           
