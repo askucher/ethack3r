@@ -8,8 +8,8 @@ read-from-cache = (filename, cb)->
     cb null, data
 
 get-filename = (name, params)->
-    return "#{dirname}/db/#{name}.json" if (params ? []).length is 0
-    "#{dirname}/db/#{name}-#{params.join('-')}.json"
+    return "#{__dirname}/db/#{name}.json" if (params ? []).length is 0
+    "#{__dirname}/db/#{name}-#{params.join('-')}.json"
 
 parse-params = (input)->
     | typeof! input is \Array => input
