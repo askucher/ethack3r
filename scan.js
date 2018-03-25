@@ -6,8 +6,8 @@
   ref$ = require('prelude-ls'), map = ref$.map, concat = ref$.concat, groupBy = ref$.groupBy, objToPairs = ref$.objToPairs, map = ref$.map, sortBy = ref$.sortBy, take = ref$.take, reverse = ref$.reverse;
   ref$ = process.argv, _ = ref$[0], _ = ref$[1], command = ref$[2], length = ref$[3];
   load('participants', function(err, items){
-    var rating, this$ = this;
-    return rating = take(length)(
+    var rating, transform, this$ = this;
+    rating = take(length)(
     reverse(
     sortBy(function(it){
       return it[1];
@@ -17,12 +17,18 @@
     })(
     objToPairs(
     groupBy(function(it){
-      return it[0];
+      return it[1];
     })(
     concat(
     map(function(it){
       return it.holders;
     })(
     items))))))));
+    transform = function(arg$){
+      var address, index;
+      address = arg$[0], index = arg$[1];
+      return index + " | " + address;
+    };
+    return console.log(rating.map(transform).join('\n'));
   });
 }).call(this);

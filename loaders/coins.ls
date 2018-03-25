@@ -28,13 +28,14 @@ scanerall = ([head, ...list], cb)->
     err, list <- scanerall list
     return cb err if err?
     list[head.symbol] = tokens?0
+    #console.log list
     cb null, list
 
 
 parser = (params, cb)->
     url = "http://crowddd.flyber.net/vadim/tokens"
     err, data <- get url .timeout(deadline: 5000).end
-    console.log 'loaded a tokens list'
+    #console.log 'loaded a tokens list'
     return cb err if err?
     model = JSON.parse data.text
     

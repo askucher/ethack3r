@@ -5,6 +5,7 @@ require! {
 
 
 load-holders = ([pair, ...rest], cb)->
+    return cb null, [] if not pair?
     [name, address] = pair
     err, holders <- load "holders #{address}"
     return cb err if err?
@@ -23,6 +24,7 @@ apply-filter = (params, [name, address])-->
 
 module.exports = (params, cb)->
     err, coins <- load \coins
+    console.log coins
     return cb err if err?
     coin-pairs =
         coins |> obj-to-pairs 
