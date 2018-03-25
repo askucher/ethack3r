@@ -23,7 +23,7 @@ scanerall = ([head, ...list], cb)->
     return cb null, {} if !head?
     #console.log list.length
     err, tokens <- search head.symbol
-    console.log 'loaded address for #{head.symbol}'
+    console.log "loaded address for #{head.symbol}"
     return cb err if err?
     err, list <- scanerall list
     return cb err if err?
