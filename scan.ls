@@ -11,7 +11,7 @@ require! {
 #console.log icos
 
 err, items <- load \participants
-console.log items
+#console.log items
 
 rating = 
     items |> map (.holders) 
