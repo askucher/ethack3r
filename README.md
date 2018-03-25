@@ -25,4 +25,4 @@ Result - Make the report of serial contributors
 ```
 
 
-This project is supported by [https://t.me/crowddd](https://t.me/crowddd) community. Feel free to ask any question.
+This project is supported by Crowd Due Diligence Community [https://t.me/crowddd](https://t.me/crowddd). Feel free to ask any question.
