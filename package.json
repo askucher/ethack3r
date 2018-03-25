@@ -1,13 +1,13 @@
 {
   "name": "ethack3r",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "--------------",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "bin": {
-    "ethack" : "./ethack3r.sh"
+    "ethack3r" : "./ethack3r.sh"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
